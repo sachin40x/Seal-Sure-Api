@@ -1,7 +1,7 @@
-Flask==2.3.3
-flask-cors==4.0.0
-opencv-python==4.8.1.78
-numpy==1.24.3
-Pillow==10.0.1
-Werkzeug==2.3.7
-gunicorn==21.2.0
+Flask>=2.3.0
+flask-cors>=4.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+Werkzeug>=2.3.0
+gunicorn>=21.0.0
