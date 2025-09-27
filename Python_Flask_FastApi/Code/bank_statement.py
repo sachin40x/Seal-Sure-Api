@@ -87,6 +87,10 @@ def serve_output_image(filename):
     # Serve the result image from the outputs folder
     return send_from_directory(OUTPUT_FOLDER, filename)
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({'status': 'healthy', 'message': 'API is running'})
+
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5001))
+    port = int(os.environ.get('PORT', 5000))
     app.run(debug=False, host='0.0.0.0', port=port)
